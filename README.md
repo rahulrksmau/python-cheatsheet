@@ -51,6 +51,22 @@ index = <list>.index(<el>)  # Returns first index of item.
 <list>.clear()              # Removes all items.   
 ```
 
+```python
+<list1> = [<el>]   # Declare a list
+<list2> = <list1>  # Make another list which is reference to previous list
+<list1> += [<el>]  # Add elements by using '+=' operation, List1 and List2 will be same
+<list1> = <list1> + [<el>]    # Now List1 will not be same as List2
+example :-
+>> a = [1,2,3]
+>> b = a
+>> a += [5]
+>> id(a) == id(b)
+>> True
+>> a = a + [10]
+>> id(a) == id(b)
+>> False
+```
+
 
 Dictionary
 ----------
